@@ -1,0 +1,26 @@
+<app-nav></app-nav>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="table-responsive">
+          <table class="table table-hover text-center bg-dark"  style="border-radius: 10px;">
+            <thead>
+              <tr>
+                <th class="text-white">SpecializationCode</th>
+                <th class="text-white">SpecializationName</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of serv.specList">
+                <td class="text-white"><span #id class="text-white" style="color: black;">{{ item.specializationCode}}</span></td>
+                <td class="text-white">{{ item.specializationName }}</td>
+                <td><a routerLink="doctors" style="text-decoration: none;" class="text-dark"><button class="btn bg-white text-dark" (click)="docwithspec(id)">View Doctor Details</button></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  

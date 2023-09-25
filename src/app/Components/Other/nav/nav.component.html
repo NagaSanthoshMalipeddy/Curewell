@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="border-radius: 15px;">
+    <div class="container-fluid bg-dark"  style="border-radius: 15px;">
+      <a class="navbar-brand text-white" href="#"><span class="display-5">CureWell</span></a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" routerLink="/viewDoc">View Doctor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/viewSpec">View Specializations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/viewSurg">View Today's Surgery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/addDoc">Add Doctor</a>
+          </li>
+          </ul>
+          <div style="display: flex; justify-content: flex-end;">
+            <ul style="list-style: none; display: flex; align-items: center;">
+              <li class="nav-item">
+                <i class="fa fa-user text-white"><span class="text-white px-2">{{username}}</span></i>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" (click)="logout()">LogOut</a>
+              </li>
+            </ul>
+          </div>
+          
+      </div>
+    </div>
+  </nav>

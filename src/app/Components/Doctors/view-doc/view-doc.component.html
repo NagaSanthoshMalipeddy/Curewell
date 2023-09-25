@@ -1,0 +1,27 @@
+<app-nav></app-nav>
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="table-responsive">
+          <table class="table table-hover text-center bg-dark"  style="border-radius: 10px;">
+            <thead>
+              <tr>
+                <th class="text-white">DoctorId</th>
+                <th class="text-white">DoctorName</th>
+                <th class="text-white">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of serv.docList">
+                <td class="text-white"><span #id class="text-white" style="color: black;">{{ item.doctorId }}</span></td>
+                <td class="text-white">{{ item.doctorName }}</td>
+                <td><a routerLink="/updateDoc" style="text-decoration: none;" class="text-dark"><button class="btn bg-white" (click)="upd(id)">Edit doctor details</button></a></td>
+                <!-- <td><a routerLink="/updateDoc">click</a></td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
